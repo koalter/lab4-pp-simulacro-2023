@@ -1,0 +1,25 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Película</th>
+			<th scope="col">Tipo</th>
+			<th scope="col">Cantidad de público</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let pelicula of peliculas; index as i" (click)="seleccionarPelicula(i)">
+			<th scope="row">{{ i + 1 }}</th>
+			<td>
+				<img
+					[src]="pelicula.foto"
+					class="me-2"
+					style="width: 20px"
+				/>
+				{{ pelicula.nombre }}
+			</td>
+			<td>{{ pelicula.tipo }}</td>
+			<td>{{ pelicula.cantidadPublico | number }}</td>
+		</tr>
+	</tbody>
+</table>

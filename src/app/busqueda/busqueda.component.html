@@ -1,0 +1,53 @@
+<div class="py-5 text-center bg-light">
+    <!-- <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+    <h1 class="display-5 fw-bold text-body-emphasis">Listado de elementos</h1>
+    <div class="col-lg-6 mx-auto">
+      <tabla-pelicula *ngIf="modoGrilla" (peliculaSeleccionada)="seleccionarPelicula($event)"></tabla-pelicula>  
+      <p *ngIf="modoGrilla" class="lead mb-4">Modo grilla</p>
+      <p *ngIf="!modoGrilla" class="lead mb-4">Modo listado</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button (click)="cambiarVista()" type="button" class="btn btn-primary btn-lg px-4 gap-3">Cambiar vista</button>
+      </div>
+    </div>
+</div>
+<div class="container px-4" id="hanging-icons">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Para borrar</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <button class="btn btn-danger">
+            Borrar
+          </button>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <detalle-pelicula [pelicula]="peliculaSeleccionada"></detalle-pelicula>
+        <!-- <div>
+          <h3 class="fs-2">Solo mostrar</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <button class="btn btn-secondary">
+            Limpiar
+          </button>
+        </div> -->
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Modificar</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <button class="btn btn-success">
+            Guardar cambios
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

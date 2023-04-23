@@ -1,0 +1,30 @@
+<header class="d-flex justify-content-center py-3">
+  <ul ngbNav #nav="ngbNav" class="nav-pills">
+    <li class="mx-1 nav-item"><a routerLink="" class="nav-link">Home</a></li>
+    <li class="mx-1 nav-item"><a routerLink="busqueda" class="nav-link">Busqueda</a></li>
+    <li class="mx-1 nav-item" ngbDropdown>
+        <a type="button" class="nav-link" ngbDropdownToggle>
+            Peliculas
+        </a>
+        <div ngbDropdownMenu>
+            <a routerLink="peliculas/alta" ngbDropdownItem>Alta</a>
+            <a routerLink="peliculas/listado" ngbDropdownItem>Listado</a>
+        </div>
+    </li>
+    <li class="mx-1 nav-item" ngbDropdown>
+        <a type="button" class="nav-link" ngbDropdownToggle>
+            Actores
+        </a>
+        <div ngbDropdownMenu>
+            <a routerLink="actor/alta" ngbDropdownItem>Alta</a>
+            <a routerLink="actor/listado" ngbDropdownItem>Listado</a>
+        </div>
+    </li>
+  </ul>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer class="py-3 my-4">
+  <p class="border-top text-center text-secondary mx-5 py-3">© 2023 Lorenzo Cea</p>
+</footer>
