@@ -5,19 +5,22 @@ import { PeliculasRoutingModule } from './peliculas-routing.module';
 import { PeliculasComponent } from './peliculas.component';
 import { PeliculaAltaComponent } from './pelicula-alta/pelicula-alta.component';
 import { PeliculaListadoComponent } from './pelicula-listado/pelicula-listado.component';
-import { SharedModule } from '../shared/shared.module';
+import { TablaPeliculaComponent } from './shared/tabla-pelicula/tabla-pelicula.component';
 
 
 @NgModule({
   declarations: [
     PeliculasComponent,
     PeliculaAltaComponent,
-    PeliculaListadoComponent
+    PeliculaListadoComponent,
+    TablaPeliculaComponent
   ],
   imports: [
     CommonModule,
-    PeliculasRoutingModule,
-    SharedModule
+    PeliculasRoutingModule
+  ],
+  exports: [
+    TablaPeliculaComponent
   ]
 })
 export class PeliculasModule { }

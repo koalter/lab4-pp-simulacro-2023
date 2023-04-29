@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TablaPeliculaComponent } from './tabla-pelicula/tabla-pelicula.component';
+import { TablaPaisesComponent } from './tabla-paises/tabla-paises.component';
 
 
 
 @NgModule({
   declarations: [
-    TablaPeliculaComponent
+    TablaPaisesComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    TablaPeliculaComponent
+    TablaPaisesComponent
   ]
 })
 export class SharedModule { }

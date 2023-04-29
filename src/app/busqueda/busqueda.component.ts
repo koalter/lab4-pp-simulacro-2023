@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Peliculas } from '../models/peliculas';
+import { Peliculas } from '../peliculas/shared/peliculas.model';
 
 @Component({
   selector: 'app-busqueda',
