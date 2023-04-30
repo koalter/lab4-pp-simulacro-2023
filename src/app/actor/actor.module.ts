@@ -6,7 +6,7 @@ import { ActorComponent } from './actor.component';
 import { ActorAltaComponent } from './actor-alta/actor-alta.component';
 import { ActorListadoComponent } from './actor-listado/actor-listado.component';
 import { ActorFormComponent } from './actor-form/actor-form.component';
-import { SharedModule } from '../shared/shared.module';
+import { PaisesModule } from '../paises/paises.module';
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     ActorRoutingModule,
-    SharedModule
+    PaisesModule
   ]
 })
 export class ActorModule { }

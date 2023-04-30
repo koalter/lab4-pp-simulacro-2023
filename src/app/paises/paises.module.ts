@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TablaPaisesComponent } from './tabla-paises/tabla-paises.component';
+import { TablaPaisesComponent } from './shared/tabla-paises/tabla-paises.component';
 
 
 
@@ -15,4 +15,4 @@ import { TablaPaisesComponent } from './tabla-paises/tabla-paises.component';
     TablaPaisesComponent
   ]
 })
-export class SharedModule { }
+export class PaisesModule { }
