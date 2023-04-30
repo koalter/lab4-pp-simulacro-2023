@@ -9,7 +9,7 @@ import { TablaPaisesComponent } from './shared/tabla-paises/tabla-paises.compone
     TablaPaisesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     TablaPaisesComponent

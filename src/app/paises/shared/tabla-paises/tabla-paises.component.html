@@ -2,10 +2,13 @@
   <span>Nacionalidades</span>
 </h4>
 <ul class="list-group mb-3">
-  <li class="list-group-item d-flex justify-content-between lh-sm">
+  <li class="list-group-item d-flex justify-content-between lh-sm"
+    role="button"
+    *ngFor="let pais of paises"
+    (click)="seleccionarPais(pais)">
     <div>
-      <h6 class="my-0">Product name</h6>
+      <h6 class="my-0">{{pais.nombre}}</h6>
     </div>
-    <span class="text-body-secondary">$12</span>
+    <img [src]="pais.bandera" width="50" class="text-body-secondary" />
   </li>
 </ul>

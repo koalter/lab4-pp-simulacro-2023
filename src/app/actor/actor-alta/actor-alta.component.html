@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row g-5">
-    <tabla-paises class="col-md-5 col-lg-4 order-md-last"></tabla-paises>
-    <actor-form class="col-md-7 col-lg-8"></actor-form>
+    <tabla-paises (select)="seleccionarPais($event)" class="col-md-5 col-lg-4 order-md-last"></tabla-paises>
+    <actor-form [pais]="paisSeleccionado" class="col-md-7 col-lg-8"></actor-form>
   </div>
 </div>
