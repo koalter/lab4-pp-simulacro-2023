@@ -7,6 +7,7 @@ import { ActorAltaComponent } from './actor-alta/actor-alta.component';
 import { ActorListadoComponent } from './actor-listado/actor-listado.component';
 import { ActorFormComponent } from './actor-form/actor-form.component';
 import { PaisesModule } from '../paises/paises.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PaisesModule } from '../paises/paises.module';
   imports: [
     CommonModule,
     ActorRoutingModule,
-    PaisesModule
+    PaisesModule,
+    FormsModule
   ]
 })
 export class ActorModule { }
