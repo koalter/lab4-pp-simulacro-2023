@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Peliculas } from 'src/app/models/peliculas';
+import { Peliculas } from 'src/app/peliculas/shared/peliculas.model';
 
 @Component({
   selector: 'detalle-pelicula',

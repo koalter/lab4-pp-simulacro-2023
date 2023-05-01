@@ -1,0 +1,63 @@
+<h4 class="mb-3">Agregar nuevo actor</h4>
+<div class="needs-validation" novalidate="">
+  <div class="row g-3">
+    <div class="col-sm-6">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nombre"
+        placeholder=""
+        [(ngModel)]="nombre"
+        required=""
+      />
+      <div class="invalid-feedback">El nombre es requerido.</div>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="apellido" class="form-label">Apellido</label>
+      <input
+        type="text"
+        class="form-control"
+        id="apellido"
+        placeholder=""
+        [(ngModel)]="apellido"
+        required=""
+      />
+      <div class="invalid-feedback">El apellido es requerido.</div>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+      <input
+        type="date"
+        class="form-control"
+        id="fechaNacimiento"
+        [(ngModel)]="fechaNacimiento"
+        required=""
+      />
+      <div class="invalid-feedback">Ingrese la fecha de nacimiento.</div>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="nacionalidad" class="form-label">Nacionalidad</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nacionalidad"
+        placeholder=""
+        [(ngModel)]="pais"
+        required=""
+        disabled
+      />
+      <div class="invalid-feedback">La nacionalidad es requerida.</div>
+    </div>
+  </div>
+
+  <hr class="my-4" />
+
+  <button class="w-100 btn btn-primary btn-lg"
+    (click)="submit()">
+    Insertar nuevo actor
+  </button>
+</div>

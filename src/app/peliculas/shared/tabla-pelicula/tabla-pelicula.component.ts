@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Peliculas, Tipo } from 'src/app/models/peliculas';
+import { Peliculas, Tipo } from '../peliculas.model';
 
 @Component({
   selector: 'tabla-pelicula',

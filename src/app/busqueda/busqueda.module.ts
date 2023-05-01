@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { BusquedaRoutingModule } from './busqueda-routing.module';
 import { BusquedaComponent } from './busqueda.component';
-import { SharedModule } from '../shared/shared.module';
 import { DetallePeliculaComponent } from './detalle-pelicula/detalle-pelicula.component';
+import { PeliculasModule } from '../peliculas/peliculas.module';
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { DetallePeliculaComponent } from './detalle-pelicula/detalle-pelicula.co
   imports: [
     CommonModule,
     BusquedaRoutingModule,
-    SharedModule
+    PeliculasModule
   ]
 })
 export class BusquedaModule { }
